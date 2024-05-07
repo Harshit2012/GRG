@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.jpg" id="logo">
+        <h1>GRG</h1>
+        <label for="repoName">Repository Name:</label>
+        <input type="text" id="repoName" placeholder="Enter your repository name">
+
+        <label for="repoDescription">Repository Description:</label>
+        <textarea id="repoDescription" rows="4" placeholder="Enter your repository description"></textarea>
+
+        <div class="badges">
+            <h3>Select Badges:</h3>
+            <label><input type="checkbox" value="[GitHub forks](https://img.shields.io/github/forks/:user/:repo)" checked>Forks</label>
+            <label><input type="checkbox" value="[GitHub watchers](https://img.shields.io/github/watchers/:user/:repo)">Watchers</label>
+            <label><input type="checkbox" value="[GitHub License](https://img.shields.io/github/license/:user/:repo)">License</label>
+            <label><input type="checkbox" value="[GitHub Release](https://img.shields.io/github/v/release/:user/:repo)">Release</label>
+        </div>
+        <div class="section-checkboxes">
+            <h3>Select Sections:</h3>
+            <label><input type="checkbox" value="Acknowledgements" checked> Acknowledgements</label>
+            <label><input type="checkbox" value="API"> API</label>
+            <label><input type="checkbox" value="Demo"> Demo</label>
+            <label><input type="checkbox" value="FAQs"> FAQs</label>
+            <label><input type="checkbox" value="Feedback"> Feedback</label>
+        </div>
+        <button id="generateReadme">Generate README</button>
+        <button id="copyReadme">Copy to Clipboard</button>
+
+        <div class="output" id="readmeOutput">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
